@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.alice-regular {
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+}
+header {
+  background: #f4e1d2;
+  color: #333;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header-content img.logo {
+  width: 80px;
+  height: auto;
+  flex-shrink: 0;
+}
+.header-text h1 {
+  font-family: "Alice", serif;
+  font-size: 2.5rem;
+  margin: 0;
+}
+.header-text p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .header-text h1 {
+    font-size: 2rem;
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 90%;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+section {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+}
+.about {
+  text-align: center;
+}
+.about h2 {
+  font-size: 1.8rem;
+  color: #d46961;
+  margin-bottom: 1rem;
+}
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.registration h2 {
+  font-family: "Alice", serif;
+  color: #d46961;
+  margin-bottom: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.help-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+button {
+  padding: 0.8rem;
+  background-color: #98312a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  width: 100%;
+}
+button:hover {
+  background-color: #c45750;
+}
+footer {
+  text-align: center;
+  background: #333;
+  color: #f4e1d2;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  button {
+    font-size: 0.9rem;
+  }
+}
